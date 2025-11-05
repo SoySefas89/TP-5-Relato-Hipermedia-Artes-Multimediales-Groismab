@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  background-image: url(img/ScreenShot-2025-9-9_0-48-10.png);
+  margin: 0;
+  padding-top: 0px;
+  overflow-x: hidden;
+}
+
+/* Estilo general del menú */
+nav {
+  display: flex;
+  padding: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 5px;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+/* Estilos de los enlaces del menú */
+.menu li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 40px;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover en los enlaces del menú */
+.menu li a:hover {
+  color: #b36969; /* Cambia el color del texto al pasar el mouse */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del texto */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.95); /* Fondo semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+h1 {
+  margin: 20px;
+  padding-left: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+section {
+  width: 100%;
+}
+
+section img{
+  top: 10px;
+  max-width: 100%;
+}
+
+article {
+  margin-top: 200px;
+}
+
+.bold {
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}
+
+a {
+color: rgb(255, 255, 255);
+}
+
+.contenedor1 {
+  position: absolute;
+  top: 23%;         /* centra verticalmente */
+  left: 50%;        /* centra horizontalmente */
+  transform: translate(-50%, -50%);
+  background-color: rgb(44, 44, 43);
+  color: #b9b9b9;
+  width: 700px;
+  height: 110px;
+  padding: 27px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contenedor2 {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(44, 44, 43);
+  color: #b9b9b9;
+  width: 700px;
+  height: auto;
+  padding: 27px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contenedor3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(44, 44, 43);
+  color: #b9b9b9;
+  width: 700px;
+  height: auto;
+  padding: 27px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contenedor4 {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(44, 44, 43);
+  color: #b9b9b9;
+  width: 700px;
+  height: auto;
+  padding: 27px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contenedor {
+  position: relative;
+  left: 20%;
+}
+
+.radio {
+  width: 1100px;
+  display: block;
+}
+
+.ruedita1 {
+  position: absolute;
+  top: 20px; /* mueve vertical */
+  left: 20px; /* mueve horizontal */
+  width: 150px;
+}
+
+.ruedita2 {
+  position: absolute;
+  top: 20px; /* mueve vertical */
+  left: 930px; /* mueve horizontal */
+  width: 150px;
+}
+
+#formulario {
+  background-color: rgb(44, 44, 43);
+  width: 1100px;
+  margin-left: 400px;
+  margin-top: 17%;
+  padding: 25px;
+}
+
+#formulario table {
+  border-collapse: collapse;
+  width: 100%;
+  /* para que ocupe todo el ancho del contenedor*/
+}
+
+.columna_izquierda {
+  font-size: 13px;
+  text-align: center;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.columna_derecha {
+  padding-left: 5px;
+}
+
+label {
+  /* Para poder ponerle margin, padding, width, etc. */
+  display: block;
+  font-size: 13px;
+}
+
+.label_gris {
+  background-color: rgb(83, 49, 99);
+  outline: dashed 1px;
+  font-weight: bold;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+}
+
+.interlineado {
+  line-height: 22px;
+}
+
+.interlineado1 {
+  line-height: 45px;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  background-color: rgb(83, 75, 87);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  padding-left: 5px;
+}
+
+.renglon {
+  height: 20px;
+}
+
+.columna_izquierda_opciones {
+  font-size: 13px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+#sexo_0, #sexo_1, #sexo_2, #asesino_0, #asesino_1, #asesino_2, #asesino_3, #asesino_4 {
+	width:20px;	
+  
+  /* Usamos la alineación vertical para que los textos de los  elementos
+  queden centrados verticalmente. */
+  vertical-align:middle;
+}
+
+#comentarios {
+	width:600px;
+	height:100px;
+	border:1px dashed rgb(255, 255, 255);
+  padding:5px;
+  background-color: rgb(83, 75, 87);
+  
+  /* Para evitar que se pueda cambiar el tamaño con el mouse */
+	resize:none;
+}
+
+#enviar
+{
+	width: 100px;
+	border: 1px dashed black;
+	margin-top: 20px;
+	border-radius: 10px; /* Bordes redondeados */
+	margin-bottom: 10px;
+  margin-left: 300px;
+}
+
+#borrar
+{
+	width:100px;
+	border:1px dashed black;
+	background-color: rgb(84, 101, 117);
+	margin:20px;
+	border-radius: 10px; /* Border redondeados */
+}
